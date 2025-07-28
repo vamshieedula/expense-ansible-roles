@@ -1,0 +1,6 @@
+- name: "configure {{compoenet}} server"
+  hosts: "{{compoenet}}"
+  become: yes
+  roles:
+    - "{{compoenet}}"
+# can be run with anible-playbook main.yaml -e component=db
